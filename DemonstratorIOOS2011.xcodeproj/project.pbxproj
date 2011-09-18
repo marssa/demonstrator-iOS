@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1103869B142668B800906B82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103869A142668B800906B82 /* UIKit.framework */; };
+		1103869D142668B800906B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103869C142668B800906B82 /* Foundation.framework */; };
+		1103869F142668B800906B82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103869E142668B800906B82 /* CoreGraphics.framework */; };
+		110386A5142668B800906B82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 110386A3142668B800906B82 /* InfoPlist.strings */; };
+		110386A8142668B800906B82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 110386A7142668B800906B82 /* main.m */; };
+		110386AB142668B800906B82 /* DemonstratorIOOS2011AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 110386AA142668B800906B82 /* DemonstratorIOOS2011AppDelegate.m */; };
+		110386AE142668B800906B82 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110386AC142668B800906B82 /* MainWindow.xib */; };
+		110386B1142668B900906B82 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110386B0142668B900906B82 /* FirstViewController.m */; };
+		110386B4142668B900906B82 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110386B3142668B900906B82 /* SecondViewController.m */; };
+		110386B7142668B900906B82 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110386B5142668B900906B82 /* FirstView.xib */; };
+		110386BA142668B900906B82 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110386B8142668B900906B82 /* SecondView.xib */; };
+		110386C1142668B900906B82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103869A142668B800906B82 /* UIKit.framework */; };
+		110386C2142668B900906B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103869C142668B800906B82 /* Foundation.framework */; };
+		110386C3142668B900906B82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1103869E142668B800906B82 /* CoreGraphics.framework */; };
+		110386CB142668B900906B82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 110386C9142668B900906B82 /* InfoPlist.strings */; };
+		110386CE142668B900906B82 /* DemonstratorIOOS2011Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 110386CD142668B900906B82 /* DemonstratorIOOS2011Tests.h */; };
+		110386D0142668B900906B82 /* DemonstratorIOOS2011Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 110386CF142668B900906B82 /* DemonstratorIOOS2011Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		110386C4142668B900906B82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1103868D142668B700906B82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11038695142668B800906B82;
+			remoteInfo = DemonstratorIOOS2011;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11038696142668B800906B82 /* DemonstratorIOOS2011.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemonstratorIOOS2011.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1103869A142668B800906B82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1103869C142668B800906B82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1103869E142668B800906B82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		110386A2142668B800906B82 /* DemonstratorIOOS2011-Info.plist */ = {isa = PBXFileReference; path = "DemonstratorIOOS2011-Info.plist"; sourceTree = "<group>"; };
+		110386A4142668B800906B82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		110386A6142668B800906B82 /* DemonstratorIOOS2011-Prefix.pch */ = {isa = PBXFileReference; path = "DemonstratorIOOS2011-Prefix.pch"; sourceTree = "<group>"; };
+		110386A7142668B800906B82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		110386A9142668B800906B82 /* DemonstratorIOOS2011AppDelegate.h */ = {isa = PBXFileReference; path = DemonstratorIOOS2011AppDelegate.h; sourceTree = "<group>"; };
+		110386AA142668B800906B82 /* DemonstratorIOOS2011AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemonstratorIOOS2011AppDelegate.m; sourceTree = "<group>"; };
+		110386AD142668B800906B82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		110386AF142668B800906B82 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		110386B0142668B900906B82 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		110386B2142668B900906B82 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		110386B3142668B900906B82 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		110386B6142668B900906B82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		110386B9142668B900906B82 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		110386C0142668B900906B82 /* DemonstratorIOOS2011Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemonstratorIOOS2011Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		110386C8142668B900906B82 /* DemonstratorIOOS2011Tests-Info.plist */ = {isa = PBXFileReference; path = "DemonstratorIOOS2011Tests-Info.plist"; sourceTree = "<group>"; };
+		110386CA142668B900906B82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		110386CC142668B900906B82 /* DemonstratorIOOS2011Tests-Prefix.pch */ = {isa = PBXFileReference; path = "DemonstratorIOOS2011Tests-Prefix.pch"; sourceTree = "<group>"; };
+		110386CD142668B900906B82 /* DemonstratorIOOS2011Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemonstratorIOOS2011Tests.h; sourceTree = "<group>"; };
+		110386CF142668B900906B82 /* DemonstratorIOOS2011Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemonstratorIOOS2011Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11038693142668B800906B82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1103869B142668B800906B82 /* UIKit.framework in Frameworks */,
+				1103869D142668B800906B82 /* Foundation.framework in Frameworks */,
+				1103869F142668B800906B82 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110386BC142668B900906B82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110386C1142668B900906B82 /* UIKit.framework in Frameworks */,
+				110386C2142668B900906B82 /* Foundation.framework in Frameworks */,
+				110386C3142668B900906B82 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1103868B142668B700906B82 = {
+			isa = PBXGroup;
+			children = (
+				110386A0142668B800906B82 /* DemonstratorIOOS2011 */,
+				110386C6142668B900906B82 /* DemonstratorIOOS2011Tests */,
+				11038699142668B800906B82 /* Frameworks */,
+				11038697142668B800906B82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11038697142668B800906B82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11038696142668B800906B82 /* DemonstratorIOOS2011.app */,
+				110386C0142668B900906B82 /* DemonstratorIOOS2011Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11038699142668B800906B82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1103869A142668B800906B82 /* UIKit.framework */,
+				1103869C142668B800906B82 /* Foundation.framework */,
+				1103869E142668B800906B82 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		110386A0142668B800906B82 /* DemonstratorIOOS2011 */ = {
+			isa = PBXGroup;
+			children = (
+				110386A9142668B800906B82 /* DemonstratorIOOS2011AppDelegate.h */,
+				110386AA142668B800906B82 /* DemonstratorIOOS2011AppDelegate.m */,
+				110386AC142668B800906B82 /* MainWindow.xib */,
+				110386AF142668B800906B82 /* FirstViewController.h */,
+				110386B0142668B900906B82 /* FirstViewController.m */,
+				110386B2142668B900906B82 /* SecondViewController.h */,
+				110386B3142668B900906B82 /* SecondViewController.m */,
+				110386B5142668B900906B82 /* FirstView.xib */,
+				110386B8142668B900906B82 /* SecondView.xib */,
+				110386A1142668B800906B82 /* Supporting Files */,
+			);
+			path = DemonstratorIOOS2011;
+			sourceTree = "<group>";
+		};
+		110386A1142668B800906B82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				110386A2142668B800906B82 /* DemonstratorIOOS2011-Info.plist */,
+				110386A3142668B800906B82 /* InfoPlist.strings */,
+				110386A6142668B800906B82 /* DemonstratorIOOS2011-Prefix.pch */,
+				110386A7142668B800906B82 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		110386C6142668B900906B82 /* DemonstratorIOOS2011Tests */ = {
+			isa = PBXGroup;
+			children = (
+				110386CD142668B900906B82 /* DemonstratorIOOS2011Tests.h */,
+				110386CF142668B900906B82 /* DemonstratorIOOS2011Tests.m */,
+				110386C7142668B900906B82 /* Supporting Files */,
+			);
+			path = DemonstratorIOOS2011Tests;
+			sourceTree = "<group>";
+		};
+		110386C7142668B900906B82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				110386C8142668B900906B82 /* DemonstratorIOOS2011Tests-Info.plist */,
+				110386C9142668B900906B82 /* InfoPlist.strings */,
+				110386CC142668B900906B82 /* DemonstratorIOOS2011Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11038695142668B800906B82 /* DemonstratorIOOS2011 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110386D3142668B900906B82 /* Build configuration list for PBXNativeTarget "DemonstratorIOOS2011" */;
+			buildPhases = (
+				11038692142668B800906B82 /* Sources */,
+				11038693142668B800906B82 /* Frameworks */,
+				11038694142668B800906B82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemonstratorIOOS2011;
+			productName = DemonstratorIOOS2011;
+			productReference = 11038696142668B800906B82 /* DemonstratorIOOS2011.app */;
+			productType = "com.apple.product-type.application";
+		};
+		110386BF142668B900906B82 /* DemonstratorIOOS2011Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110386D6142668B900906B82 /* Build configuration list for PBXNativeTarget "DemonstratorIOOS2011Tests" */;
+			buildPhases = (
+				110386BB142668B900906B82 /* Sources */,
+				110386BC142668B900906B82 /* Frameworks */,
+				110386BD142668B900906B82 /* Resources */,
+				110386BE142668B900906B82 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				110386C5142668B900906B82 /* PBXTargetDependency */,
+			);
+			name = DemonstratorIOOS2011Tests;
+			productName = DemonstratorIOOS2011Tests;
+			productReference = 110386C0142668B900906B82 /* DemonstratorIOOS2011Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1103868D142668B700906B82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Intellimare Ltd";
+			};
+			buildConfigurationList = 11038690142668B700906B82 /* Build configuration list for PBXProject "DemonstratorIOOS2011" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1103868B142668B700906B82;
+			productRefGroup = 11038697142668B800906B82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11038695142668B800906B82 /* DemonstratorIOOS2011 */,
+				110386BF142668B900906B82 /* DemonstratorIOOS2011Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11038694142668B800906B82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110386A5142668B800906B82 /* InfoPlist.strings in Resources */,
+				110386AE142668B800906B82 /* MainWindow.xib in Resources */,
+				110386B7142668B900906B82 /* FirstView.xib in Resources */,
+				110386BA142668B900906B82 /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110386BD142668B900906B82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110386CB142668B900906B82 /* InfoPlist.strings in Resources */,
+				110386CE142668B900906B82 /* DemonstratorIOOS2011Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		110386BE142668B900906B82 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11038692142668B800906B82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110386A8142668B800906B82 /* main.m in Sources */,
+				110386AB142668B800906B82 /* DemonstratorIOOS2011AppDelegate.m in Sources */,
+				110386B1142668B900906B82 /* FirstViewController.m in Sources */,
+				110386B4142668B900906B82 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110386BB142668B900906B82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110386D0142668B900906B82 /* DemonstratorIOOS2011Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		110386C5142668B900906B82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11038695142668B800906B82 /* DemonstratorIOOS2011 */;
+			targetProxy = 110386C4142668B900906B82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		110386A3142668B800906B82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110386A4142668B800906B82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		110386AC142668B800906B82 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110386AD142668B800906B82 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		110386B5142668B900906B82 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110386B6142668B900906B82 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		110386B8142668B900906B82 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110386B9142668B900906B82 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		110386C9142668B900906B82 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110386CA142668B900906B82 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		110386D1142668B900906B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		110386D2142668B900906B82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		110386D4142668B900906B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemonstratorIOOS2011/DemonstratorIOOS2011-Prefix.pch";
+				INFOPLIST_FILE = "DemonstratorIOOS2011/DemonstratorIOOS2011-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		110386D5142668B900906B82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemonstratorIOOS2011/DemonstratorIOOS2011-Prefix.pch";
+				INFOPLIST_FILE = "DemonstratorIOOS2011/DemonstratorIOOS2011-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		110386D7142668B900906B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemonstratorIOOS2011.app/DemonstratorIOOS2011";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemonstratorIOOS2011Tests/DemonstratorIOOS2011Tests-Prefix.pch";
+				INFOPLIST_FILE = "DemonstratorIOOS2011Tests/DemonstratorIOOS2011Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		110386D8142668B900906B82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DemonstratorIOOS2011.app/DemonstratorIOOS2011";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemonstratorIOOS2011Tests/DemonstratorIOOS2011Tests-Prefix.pch";
+				INFOPLIST_FILE = "DemonstratorIOOS2011Tests/DemonstratorIOOS2011Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11038690142668B700906B82 /* Build configuration list for PBXProject "DemonstratorIOOS2011" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110386D1142668B900906B82 /* Debug */,
+				110386D2142668B900906B82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110386D3142668B900906B82 /* Build configuration list for PBXNativeTarget "DemonstratorIOOS2011" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110386D4142668B900906B82 /* Debug */,
+				110386D5142668B900906B82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		110386D6142668B900906B82 /* Build configuration list for PBXNativeTarget "DemonstratorIOOS2011Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110386D7142668B900906B82 /* Debug */,
+				110386D8142668B900906B82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1103868D142668B700906B82 /* Project object */;
+}
