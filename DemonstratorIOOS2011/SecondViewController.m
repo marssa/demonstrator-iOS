@@ -21,7 +21,7 @@
 
 -(void) onTimer:(NSTimer *)theTimer 
 {
-	NSURL *url = [NSURL URLWithString:@"http://192.168.2.3:8182/lightpage/statusalllights"];
+	NSURL *url = [NSURL URLWithString:@"http://192.168.2.3:8182/lightpage/statusAll"];
 	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 	[request setDelegate:self];
 	[request startAsynchronous];
