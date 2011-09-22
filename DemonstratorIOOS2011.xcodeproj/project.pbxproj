@@ -52,7 +52,7 @@
 		119BBE54142B4F2400B3AC65 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BBE46142B4F2400B3AC65 /* SBJsonTokeniser.m */; };
 		119BBE55142B4F2400B3AC65 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BBE48142B4F2400B3AC65 /* SBJsonUTF8Stream.m */; };
 		119BBE56142B4F2400B3AC65 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BBE4A142B4F2400B3AC65 /* SBJsonWriter.m */; };
-		119BBEB1142B5E4100B3AC65 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BBEB0142B5E4100B3AC65 /* FirstViewController.m */; };
+		119BBEBC142B62D800B3AC65 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119BBEBB142B62D800B3AC65 /* FirstViewController.m */; };
 		11A62B861428A9A400223FEE /* BULB02.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A62B851428A9A400223FEE /* BULB02.png */; };
 		11A62C141428CCCE00223FEE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A62C121428CCCD00223FEE /* MapViewController.m */; };
 		11A62C151428CCCE00223FEE /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A62C131428CCCD00223FEE /* MapViewController.xib */; };
@@ -154,7 +154,7 @@
 		119BBE48142B4F2400B3AC65 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = ../../../../Downloads/SBJson_v3.0.4/Classes/SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		119BBE49142B4F2400B3AC65 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = ../../../../Downloads/SBJson_v3.0.4/Classes/SBJsonWriter.h; sourceTree = "<group>"; };
 		119BBE4A142B4F2400B3AC65 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = ../../../../Downloads/SBJson_v3.0.4/Classes/SBJsonWriter.m; sourceTree = "<group>"; };
-		119BBEB0142B5E4100B3AC65 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = "../../../../Downloads/Marsec-XL-DemonstratorIOOS2011-461dd6b/DemonstratorIOOS2011/FirstViewController.m"; sourceTree = "<group>"; };
+		119BBEBB142B62D800B3AC65 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		11A62B851428A9A400223FEE /* BULB02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BULB02.png; path = ../../../Desktop/BULB02.png; sourceTree = "<group>"; };
 		11A62C111428CCCD00223FEE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = DemonstratorIOOS2011.xcodeproj/MapViewController.h; sourceTree = "<group>"; };
 		11A62C121428CCCD00223FEE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = DemonstratorIOOS2011.xcodeproj/MapViewController.m; sourceTree = "<group>"; };
@@ -229,7 +229,6 @@
 		1103868B142668B700906B82 = {
 			isa = PBXGroup;
 			children = (
-				119BBE30142B4F0D00B3AC65 /* New Group */,
 				119BBE0B142B153C00B3AC65 /* MapKit.framework */,
 				11A62C111428CCCD00223FEE /* MapViewController.h */,
 				11A62C121428CCCD00223FEE /* MapViewController.m */,
@@ -341,7 +340,7 @@
 				110386AA142668B800906B82 /* DemonstratorIOOS2011AppDelegate.m */,
 				110386AC142668B800906B82 /* MainWindow.xib */,
 				110386AF142668B800906B82 /* FirstViewController.h */,
-				119BBEB0142B5E4100B3AC65 /* FirstViewController.m */,
+				119BBEBB142B62D800B3AC65 /* FirstViewController.m */,
 				110386B2142668B900906B82 /* SecondViewController.h */,
 				110386B3142668B900906B82 /* SecondViewController.m */,
 				110386B5142668B900906B82 /* FirstView.xib */,
@@ -380,13 +379,6 @@
 				110386CC142668B900906B82 /* DemonstratorIOOS2011Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		119BBE30142B4F0D00B3AC65 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		11AFE59C1427E0B400B56D08 /* External */ = {
@@ -568,7 +560,7 @@
 				119BBE54142B4F2400B3AC65 /* SBJsonTokeniser.m in Sources */,
 				119BBE55142B4F2400B3AC65 /* SBJsonUTF8Stream.m in Sources */,
 				119BBE56142B4F2400B3AC65 /* SBJsonWriter.m in Sources */,
-				119BBEB1142B5E4100B3AC65 /* FirstViewController.m in Sources */,
+				119BBEBC142B62D800B3AC65 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
