@@ -7,8 +7,9 @@
 //
 
 #import "SecondViewController.h"
-#import "ASIHTTPRequest.h";
-#import "ASIFormDataRequest.h";
+#import "ASIHTTPRequest.h"//;
+#import "ASIFormDataRequest.h"//;
+#import "SBJson.h"//;
 
 @implementation SecondViewController
 @synthesize navLightPort,navLightStarboard,navLightStern,underWaterLights,navLightsSwitch,underwaterLightsSwitch;
@@ -29,7 +30,11 @@
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
 	NSString *responseString =  [request responseString];
-    if([responseString isEqualToString:@"False"])
+    NSDictionary *json = [responseString JSONValue];
+    NSString *navLights = [json objectForKey:@"NavLights"];
+    NSString *underwaterLights = [json objectForKey:@"underwaterLights"];
+    
+    if([navLights isEqualToString:@"False"])
     {
         navLightPort.hidden = YES;
         navLightStarboard.hidden =YES;
