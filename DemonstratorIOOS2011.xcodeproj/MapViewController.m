@@ -11,6 +11,7 @@
 #import <MapKit/MapKit.h>
 #import "ASIHTTPRequest.h";
 #import "ASIFormDataRequest.h";
+#import "SBJson.h"//;
 
 @implementation MapViewController
 @synthesize mapView;
@@ -51,10 +52,11 @@ CLLocationCoordinate2D abc;
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
 	NSString *responseString =  [request responseString];
-    NSArray  *stringComponents = [responseString componentsSeparatedByString:@"@"];
-    NSString* login = [stringComponents objectAtIndex: 0];
+    NSDictionary *json = [responseString JSONValue];
+    NSString *login = [json objectForKey:@"NavLights"];
+    NSString *latin = [json objectForKey:@"underwaterLights"];
+    
     double log = [login doubleValue];
-    NSString* latin = [stringComponents objectAtIndex: 1];
     double lat = [latin doubleValue];
     
     CLLocationCoordinate2D coordPosition = {.latitude= log, .longitude= lat};
