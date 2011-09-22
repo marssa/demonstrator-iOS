@@ -34,7 +34,13 @@
 		110386F21426746A00906B82 /* computer_key_Arrow_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 110386EE1426746A00906B82 /* computer_key_Arrow_Up.png */; };
 		110386F414267A6300906B82 /* Untitled 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 110386F314267A6300906B82 /* Untitled 2.png */; };
 		110386FD14267CC300906B82 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 110386FC14267CC300906B82 /* house.png */; };
+		1150E9BC1429D64E00079488 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150E9BB1429D64E00079488 /* AddressAnnotation.m */; };
 		1181D94D142765F200E8CB78 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1181D94C142765F200E8CB78 /* MapKit.framework */; };
+		119BBE0C142B153C00B3AC65 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119BBE0B142B153C00B3AC65 /* MapKit.framework */; };
+		119BBE12142B25F500B3AC65 /* 2uparrow3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 119BBE0E142B25F500B3AC65 /* 2uparrow3.jpg */; };
+		119BBE13142B25F500B3AC65 /* 2uparrow2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 119BBE0F142B25F500B3AC65 /* 2uparrow2.jpg */; };
+		119BBE14142B25F500B3AC65 /* 2uparrow1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 119BBE10142B25F500B3AC65 /* 2uparrow1.jpg */; };
+		119BBE15142B25F500B3AC65 /* 2uparrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 119BBE11142B25F500B3AC65 /* 2uparrow.jpg */; };
 		11A62B861428A9A400223FEE /* BULB02.png in Resources */ = {isa = PBXBuildFile; fileRef = 11A62B851428A9A400223FEE /* BULB02.png */; };
 		11A62C141428CCCE00223FEE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A62C121428CCCD00223FEE /* MapViewController.m */; };
 		11A62C151428CCCE00223FEE /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A62C131428CCCD00223FEE /* MapViewController.xib */; };
@@ -102,8 +108,15 @@
 		110386EE1426746A00906B82 /* computer_key_Arrow_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = computer_key_Arrow_Up.png; sourceTree = "<group>"; };
 		110386F314267A6300906B82 /* Untitled 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled 2.png"; sourceTree = "<group>"; };
 		110386FC14267CC300906B82 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		1150E9BA1429D64E00079488 /* AddressAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressAnnotation.h; sourceTree = "<group>"; };
+		1150E9BB1429D64E00079488 /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAnnotation.m; sourceTree = "<group>"; };
 		1181D94A1427652C00E8CB78 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1181D94C142765F200E8CB78 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		119BBE0B142B153C00B3AC65 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		119BBE0E142B25F500B3AC65 /* 2uparrow3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2uparrow3.jpg; path = ../../../Desktop/2uparrow3.jpg; sourceTree = "<group>"; };
+		119BBE0F142B25F500B3AC65 /* 2uparrow2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2uparrow2.jpg; path = ../../../Desktop/2uparrow2.jpg; sourceTree = "<group>"; };
+		119BBE10142B25F500B3AC65 /* 2uparrow1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2uparrow1.jpg; path = ../../../Desktop/2uparrow1.jpg; sourceTree = "<group>"; };
+		119BBE11142B25F500B3AC65 /* 2uparrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2uparrow.jpg; path = ../../../Desktop/2uparrow.jpg; sourceTree = "<group>"; };
 		11A62B851428A9A400223FEE /* BULB02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BULB02.png; path = ../../../Desktop/BULB02.png; sourceTree = "<group>"; };
 		11A62C111428CCCD00223FEE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = DemonstratorIOOS2011.xcodeproj/MapViewController.h; sourceTree = "<group>"; };
 		11A62C121428CCCD00223FEE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = DemonstratorIOOS2011.xcodeproj/MapViewController.m; sourceTree = "<group>"; };
@@ -161,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119BBE0C142B153C00B3AC65 /* MapKit.framework in Frameworks */,
 				11AFE5921427DF0400B56D08 /* libz.dylib in Frameworks */,
 				11AFE5901427DEDA00B56D08 /* MobileCoreServices.framework in Frameworks */,
 				11AFE58E1427DECF00B56D08 /* SystemConfiguration.framework in Frameworks */,
@@ -177,8 +191,11 @@
 		1103868B142668B700906B82 = {
 			isa = PBXGroup;
 			children = (
+				119BBE0B142B153C00B3AC65 /* MapKit.framework */,
 				11A62C111428CCCD00223FEE /* MapViewController.h */,
 				11A62C121428CCCD00223FEE /* MapViewController.m */,
+				1150E9BA1429D64E00079488 /* AddressAnnotation.h */,
+				1150E9BB1429D64E00079488 /* AddressAnnotation.m */,
 				11A62C131428CCCD00223FEE /* MapViewController.xib */,
 				11AFE5AA1427E11600B56D08 /* libz.dylib */,
 				11AFE5A81427E10800B56D08 /* MobileCoreServices.framework */,
@@ -191,6 +208,10 @@
 				1181D94C142765F200E8CB78 /* MapKit.framework */,
 				1181D94A1427652C00E8CB78 /* MapKit.framework */,
 				110386E514266C9A00906B82 /* Default-Portrait~ipad.png */,
+				119BBE0E142B25F500B3AC65 /* 2uparrow3.jpg */,
+				119BBE0F142B25F500B3AC65 /* 2uparrow2.jpg */,
+				119BBE10142B25F500B3AC65 /* 2uparrow1.jpg */,
+				119BBE11142B25F500B3AC65 /* 2uparrow.jpg */,
 				110386F314267A6300906B82 /* Untitled 2.png */,
 				110386FC14267CC300906B82 /* house.png */,
 				110386E7142670EE00906B82 /* move.png */,
@@ -410,6 +431,10 @@
 				11AFE5A21427E0B400B56D08 /* README-GHUnit in Resources */,
 				11A62B861428A9A400223FEE /* BULB02.png in Resources */,
 				11A62C151428CCCE00223FEE /* MapViewController.xib in Resources */,
+				119BBE12142B25F500B3AC65 /* 2uparrow3.jpg in Resources */,
+				119BBE13142B25F500B3AC65 /* 2uparrow2.jpg in Resources */,
+				119BBE14142B25F500B3AC65 /* 2uparrow1.jpg in Resources */,
+				119BBE15142B25F500B3AC65 /* 2uparrow.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +484,7 @@
 				11AFE5861427DB1700B56D08 /* ASIAuthenticationDialog.m in Sources */,
 				11AFE5A31427E0B400B56D08 /* Reachability.m in Sources */,
 				11A62C141428CCCE00223FEE /* MapViewController.m in Sources */,
+				1150E9BC1429D64E00079488 /* AddressAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

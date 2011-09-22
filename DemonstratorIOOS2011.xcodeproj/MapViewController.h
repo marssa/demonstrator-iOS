@@ -10,10 +10,12 @@
 #import <MapKit/MapKit.h>
 
 
-@interface MapViewController : UIViewController <MKMapViewDelegate> {
-    MKMapView *mapView;
+@interface MapViewController : UIViewController {
+   IBOutlet MKMapView *mapView;
+    NSTimer *myTimer;
 }
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property(nonatomic,retain)NSTimer *myTimer;
 
 @end

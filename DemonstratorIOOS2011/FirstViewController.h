@@ -17,9 +17,13 @@
     
 }
 -(IBAction)rudderPort;
+-(IBAction)rudderFullPort;
 -(IBAction)rudderStarboard;
+-(IBAction)rudderFullStarboard;
 -(IBAction)increaseRpm;
+-(IBAction)increaseFullRpm;
 -(IBAction)decreaseRpm;
+-(IBAction)decreaseFullRpm;
 @property(nonatomic,retain)NSTimer *myTimer;
 @property(nonatomic,retain)IBOutlet UIProgressView *RudderAngleGauge;
 @property(nonatomic,retain)IBOutlet UILabel  *RPMLabel;

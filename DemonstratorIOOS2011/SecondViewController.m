@@ -21,7 +21,7 @@
 
 -(void) onTimer:(NSTimer *)theTimer 
 {
-	NSURL *url = [NSURL URLWithString:@"http://stratus.mise:4567/getVoltage"];
+	NSURL *url = [NSURL URLWithString:@"http://192.168.2.3:8182/lightpage/statusalllights"];
 	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 	[request setDelegate:self];
 	[request startAsynchronous];
@@ -29,7 +29,25 @@
 - (void)requestFinished:(ASIHTTPRequest *)request
 {
 	NSString *responseString =  [request responseString];
-    NSArray  *stringComponents = [responseString componentsSeparatedByString:@"@"];
+    if([responseString isEqualToString:@"False"])
+    {
+        navLightPort.hidden = YES;
+        navLightStarboard.hidden =YES;
+        navLightStern.hidden =YES;
+        [navLightsSwitch setOn:NO animated:YES];
+        
+        
+    }
+    else
+    {
+        navLightPort.hidden = NO;
+        navLightStarboard.hidden =NO;
+        navLightStern.hidden =NO;
+        [navLightsSwitch setOn:YES animated:YES];
+        
+    }
+
+    /*NSArray  *stringComponents = [responseString componentsSeparatedByString:@"@"];
     NSString* navLightStatus = [stringComponents objectAtIndex: 0];
     NSString* underwaterLightStatus = [stringComponents objectAtIndex: 1];
 	if([navLightStatus isEqualToString:@"Off"])
@@ -59,7 +77,7 @@
     {
         underWaterLights.hidden = NO;
         [underwaterLightsSwitch setOn:YES animated:YES];
-    }
+    }*/
 
     
 }
@@ -72,7 +90,7 @@
 - (void)sendNavLightsDataREST:(NSString *)NavLights {
 	
 	 
-	NSString *urlString = [NSString stringWithFormat:@"http://stratus.mise:4567/setEngineThrust/%@",NavLights];
+	NSString *urlString = [NSString stringWithFormat:@"http://192.168.2.3:8182/lighting/navigationLights/%@",NavLights];
 	NSURL *url = [NSURL URLWithString:urlString];
 	
 	
@@ -84,7 +102,7 @@
 - (void)sendUnderwaterLightsDataREST:(NSString *)UnderwaterLights {
 	
 	   
-	NSString *urlString = [NSString stringWithFormat:@"http://stratus.mise:4567/setEngineThrust/%@",UnderwaterLights];
+	NSString *urlString = [NSString stringWithFormat:@"http://192.168.2.3:8182/lighting/underwaterLights/%@",UnderwaterLights];
 	NSURL *url = [NSURL URLWithString:urlString];
 	
 	
@@ -97,30 +115,30 @@
 -(IBAction)navLights{
     if(navLightsSwitch.on)
     {
-        navLightPort.hidden = YES;
-        navLightStarboard.hidden =YES;
-        navLightStern.hidden =YES;
-        [self sendNavLightsDataREST:@"Off"];
-    }
-    else
-    {
         navLightPort.hidden = NO;
         navLightStarboard.hidden =NO;
         navLightStern.hidden =NO;
-        [self sendNavLightsDataREST:@"On"];
+        [self sendNavLightsDataREST:@"True"];
+    }
+    else
+    {
+        navLightPort.hidden = YES;
+        navLightStarboard.hidden =YES;
+        navLightStern.hidden =YES;
+        [self sendNavLightsDataREST:@"False"];
     }
     
 }
 -(IBAction)underwaterLights{
     if(underwaterLightsSwitch.on)
     {
-        underWaterLights.hidden = YES;
-        [self sendUnderwaterLightsDataREST:@"T"];
+        underWaterLights.hidden = NO;
+        [self sendUnderwaterLightsDataREST:@"True"];
     }
     else
     {
-         underWaterLights.hidden = NO;
-         [self sendUnderwaterLightsDataREST:@"T"];
+         underWaterLights.hidden = YES;
+         [self sendUnderwaterLightsDataREST:@"False"];
     }
     NSString *minusFiveDeg = @"5";
     
@@ -143,17 +161,23 @@
 }
 
 
-- (void)viewDidUnload
+- (void)viewDidUnload {
+    [self stopTimer];
+}
+- (void)stopTimer
 {
-    [super viewDidUnload];
-
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+	[myTimer invalidate];
+	[myTimer release];
+	//myTimer =nil;
+}
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self stopTimer];
 }
 
-
-- (void)dealloc
-{
+- (void)dealloc {
+	[self stopTimer];
     [super dealloc];
 }
 
