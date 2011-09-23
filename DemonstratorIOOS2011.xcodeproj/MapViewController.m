@@ -12,6 +12,7 @@
 #import "ASIHTTPRequest.h";
 #import "ASIFormDataRequest.h";
 #import "SBJson.h"//;
+#import "DemonstratorConstants.h"//;
 
 @implementation MapViewController
 @synthesize mapView;
@@ -39,13 +40,14 @@ CLLocationCoordinate2D abc;
 #pragma mark - View lifecycle
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-    myTimer = [[NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(onTimer:) userInfo:nil repeats:YES]retain];
+    //myTimer = [[NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(onTimer:) userInfo:nil repeats:YES]retain];
 	
 }
 -(void) onTimer:(NSTimer *)theTimer 
 {
-	NSURL *url = [NSURL URLWithString:@"http://192.168.2.3:8182/navigationPage/gps"];
-	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+	NSString *urlString = [NSString stringWithFormat:@"http://%@/navigationPage/gps",plugAddress];
+	NSURL *url = [NSURL URLWithString:urlString];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 	[request setDelegate:self];
 	[request startAsynchronous];
 }
@@ -76,12 +78,12 @@ CLLocationCoordinate2D abc;
     MKCoordinateRegion region = {coord, span};
     
     
-	/*abc.latitude = 35.889000;
+	abc.latitude = 35.889000;
 	abc.longitude =14.519000;
     
     AddressAnnotation *addAnnotation = [[AddressAnnotation alloc] initWithCoordinate:abc];
     [mapView addAnnotation:addAnnotation];
-    [addAnnotation release];*/
+    [addAnnotation release];
     
     [mapView setRegion:region];
     // Do any additional setup after loading the view from its nib.

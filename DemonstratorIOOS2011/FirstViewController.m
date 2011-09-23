@@ -10,6 +10,7 @@
 #import "ASIHTTPRequest.h";
 #import "ASIFormDataRequest.h";
 #import "SBJson.h"//;
+#import "DemonstratorConstants.h"//;
 
 @implementation FirstViewController
 @synthesize RudderAngleGauge,RPMLabel;
@@ -22,7 +23,8 @@
 
 -(void) onTimer:(NSTimer *)theTimer 
 {
-	NSURL *url = [NSURL URLWithString:@"http://localhost:8182/motionControlPage/rudderAndSpeed/"];
+	NSString *urlString = [NSString stringWithFormat:@"http://%@/motionControlPage/rudderAndSpeed/",plugAddress];
+    NSURL *url = [NSURL URLWithString:urlString];
 	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 	[request setDelegate:self];
 	[request startAsynchronous];
@@ -52,7 +54,7 @@
 	//NSString *engineOutput = [NSString stringWithFormat:@"%.0f",engineRPM];
 	
     
-	NSString *urlString = [NSString stringWithFormat:@"http://192.168.2.20:8182/motor/speed/%@",engineRPM];
+	NSString *urlString = [NSString stringWithFormat:@"http://%@/motor/speed/%@",plugAddress,engineRPM];
 	NSURL *url = [NSURL URLWithString:urlString];
 	
 	
@@ -66,7 +68,7 @@
 	NSString *rudderOutputAngle = [NSString stringWithFormat:@"%.0f",rudderAngle];
 	
     
-	NSString *urlString = [NSString stringWithFormat:@"http://192.168.2.20:8182/rudders/rotate/%@",rudderAngle];
+	NSString *urlString = [NSString stringWithFormat:@"http://%@/rudders/rotate/%@",plugAddress,rudderAngle];
 	NSURL *url = [NSURL URLWithString:urlString];
 	
 	
@@ -94,10 +96,10 @@
     [self sendEngineDataREST:plusTen];
 }
 -(IBAction)increaseFullRpm{
-[self sendRudderDataREST:@"+100"];
+[self sendEngineDataREST:@"+100"];
 }
 -(IBAction)decreaseFullRpm{
-[self sendRudderDataREST:@"-100"];
+[self sendEngineDataREST:@"-100"];
 }
 -(IBAction)decreaseRpm{
     [self sendEngineDataREST:@"Decrease"];

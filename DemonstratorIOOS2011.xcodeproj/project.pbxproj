@@ -74,6 +74,7 @@
 		11AFE5A71427E0FE00B56D08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFE5A61427E0FD00B56D08 /* SystemConfiguration.framework */; };
 		11AFE5A91427E10800B56D08 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFE5A81427E10800B56D08 /* MobileCoreServices.framework */; };
 		11AFE5AB1427E11600B56D08 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11AFE5AA1427E11600B56D08 /* libz.dylib */; };
+		11B299FD142C55DE0058FA29 /* DemonstratorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B299FC142C55DE0058FA29 /* DemonstratorConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +190,8 @@
 		11AFE5A61427E0FD00B56D08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		11AFE5A81427E10800B56D08 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		11AFE5AA1427E11600B56D08 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		11B299FB142C55DE0058FA29 /* DemonstratorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemonstratorConstants.h; sourceTree = "<group>"; };
+		11B299FC142C55DE0058FA29 /* DemonstratorConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemonstratorConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +347,8 @@
 				110386B5142668B900906B82 /* FirstView.xib */,
 				110386B8142668B900906B82 /* SecondView.xib */,
 				110386A1142668B800906B82 /* Supporting Files */,
+				11B299FB142C55DE0058FA29 /* DemonstratorConstants.h */,
+				11B299FC142C55DE0058FA29 /* DemonstratorConstants.m */,
 			);
 			path = DemonstratorIOOS2011;
 			sourceTree = "<group>";
@@ -559,6 +564,7 @@
 				119BBF4B142B651500B3AC65 /* SBJsonParser.m in Sources */,
 				119BBF4C142B651500B3AC65 /* NSObject+SBJson.m in Sources */,
 				119BBF54142B653600B3AC65 /* Reachability.m in Sources */,
+				11B299FD142C55DE0058FA29 /* DemonstratorConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

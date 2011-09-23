@@ -10,6 +10,7 @@
 #import "ASIHTTPRequest.h"//;
 #import "ASIFormDataRequest.h"//;
 #import "SBJson.h"//;
+#import "DemonstratorConstants.h"//;
 
 @implementation SecondViewController
 @synthesize navLightPort,navLightStarboard,navLightStern,underWaterLights,navLightsSwitch,underwaterLightsSwitch;
@@ -22,7 +23,8 @@
 
 -(void) onTimer:(NSTimer *)theTimer 
 {
-	NSURL *url = [NSURL URLWithString:@"http://192.168.2.3:8182/lightpage/statusAll"];
+	NSString *urlString = [NSString stringWithFormat:@"http://%@/lightpage/statusAll",plugAddress];
+	NSURL *url = [NSURL URLWithString:urlString];
 	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 	[request setDelegate:self];
 	[request startAsynchronous];
@@ -95,7 +97,7 @@
 - (void)sendNavLightsDataREST:(NSString *)NavLights {
 	
 	 
-	NSString *urlString = [NSString stringWithFormat:@"http://192.168.2.3:8182/lighting/navigationLights/%@",NavLights];
+	NSString *urlString = [NSString stringWithFormat:@"http://%@/lighting/navigationLights/%@",plugAddress,NavLights];
 	NSURL *url = [NSURL URLWithString:urlString];
 	
 	
@@ -107,7 +109,7 @@
 - (void)sendUnderwaterLightsDataREST:(NSString *)UnderwaterLights {
 	
 	   
-	NSString *urlString = [NSString stringWithFormat:@"http://192.168.2.3:8182/lighting/underwaterLights/%@",UnderwaterLights];
+	NSString *urlString = [NSString stringWithFormat:@"http://%@/lighting/underwaterLights/%@",plugAddress,UnderwaterLights];
 	NSURL *url = [NSURL URLWithString:urlString];
 	
 	
